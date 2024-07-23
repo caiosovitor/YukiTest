@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/caiooliveira/Desktop/QA TEST YUKI/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj": {}
+    "/Users/caiooliveira/Documents/YukiTestProject/YukiTest/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj": {}
   },
   "projects": {
-    "/Users/caiooliveira/Desktop/QA TEST YUKI/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj": {
+    "/Users/caiooliveira/Documents/YukiTestProject/YukiTest/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/caiooliveira/Desktop/QA TEST YUKI/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj",
+        "projectUniqueName": "/Users/caiooliveira/Documents/YukiTestProject/YukiTest/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj",
         "projectName": "yuki-qa-automation-tests",
-        "projectPath": "/Users/caiooliveira/Desktop/QA TEST YUKI/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj",
+        "projectPath": "/Users/caiooliveira/Documents/YukiTestProject/YukiTest/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj",
         "packagesPath": "/Users/caiooliveira/.nuget/packages/",
-        "outputPath": "/Users/caiooliveira/Desktop/QA TEST YUKI/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/obj/",
+        "outputPath": "/Users/caiooliveira/Documents/YukiTestProject/YukiTest/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/caiooliveira/.nuget/NuGet/NuGet.Config"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("yuki-qa-automation-tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eebd307561ec687e0260c95eed49579a88c046cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("yuki-qa-automation-tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("yuki-qa-automation-tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

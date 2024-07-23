@@ -17,3 +17,5 @@ what you're expected to do:
  - automation testing best practices/paterns
  - performance (eg. execution in a pipeline, network latency, website response time delays, etc)
  - writting the code in a way it will keep working performantly in unnattended contexts (eg. a CI/CD pipeline)
+
+ Add comment in readme to test the git commits

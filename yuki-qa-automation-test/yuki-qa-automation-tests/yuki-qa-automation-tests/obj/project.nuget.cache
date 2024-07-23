@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jmrXOPS4T/A=",
+  "dgSpecHash": "ckcfn8vA3qU=",
   "success": true,
-  "projectFilePath": "/Users/caiooliveira/Desktop/QA TEST YUKI/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj",
+  "projectFilePath": "/Users/caiooliveira/Documents/YukiTestProject/YukiTest/yuki-qa-automation-test/yuki-qa-automation-tests/yuki-qa-automation-tests/yuki-qa-automation-tests.csproj",
   "expectedPackageFiles": [
     "/Users/caiooliveira/.nuget/packages/microsoft.codecoverage/16.5.0/microsoft.codecoverage.16.5.0.nupkg.sha512",
     "/Users/caiooliveira/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",
