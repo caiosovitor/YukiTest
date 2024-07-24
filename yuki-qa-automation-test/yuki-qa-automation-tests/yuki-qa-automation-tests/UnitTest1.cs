@@ -42,57 +42,64 @@ namespace yuki_qa_automation_tests
             driver.Quit();
         }
 
-        [Test]
+    [Test]
 
-        public void NavigateToPage(string pageName)
+        public void NavigateToPageAndCheckTheTittle(string pageName, string pageTittle)
     {
         // Navigating to the url of application
         driver.Navigate().GoToUrl("https://localhost:5001/");
         
         //Clicking above the desired page (the page desired will be informed in the parameter pageName)
-        driver.FindElement(By.XPath($"=//href[text()=Home/'{pageName}']")).Click(); 
-
+        driver.FindElement(By.XPath($"=//href[text()=Home/'{pageName}']")).Click();
         
         //Waiting until the title of the page is visible, which means that the user was redirected to the page
-        wait.Until(d => d.Title.Contains(pageName));
+         wait.Until(d => d.Title.Contains(pageTittle));
+
     }
 
-    private decimal GetSumOfInvoices()
+    private decimal GetSumOAllInvoices()
     {
         // Bringing the total value of the invoices
         string sumText = driver.FindElement(By.XPath("//table/tbody/tr/td[text()='Sum of invoices']/following-sibling::td")).Text;
         return ParseAmount(sumText);
     }
 
-    private decimal GetInvoiceAmount(string invoiceNumber)
+    private decimal GetAmountSpecificInvoice(string invoiceNumber)
     {
         // Bringing the specific value of the invoice according invoice ID passed in the parameter invoiceNumber
         string amountText = driver.FindElement(By.XPath($"//td[text()='{invoiceNumber}']/following-sibling::td")).Text;
         return ParseAmount(amountText);
     }
-
-    [Test]
+    
     public void TestNavigationAndInvoiceSummary()
     {
         // Navigating to the Invoices page passing by parameter the Invoices name that NaviateToPage will use to click
-        NavigateToPage("Invoices");
+        NavigateToPageAndCheckTheTittle("Invoices", "Invoices");
 
         // Verifying the sum of the invoices
-        decimal expectedSum = 963.97m;
-        decimal actualSum = GetSumOfInvoices();
-        Assert.AreEqual(expectedSum, actualSum, "The sum of the invoices is incorrect."); //The message "The sum of the ivoices is incorrect will be show in case the value found is incorrect"
+        decimal expectedValue = 963.97m;
+        decimal actualValue = GetSumOAllInvoices();
+        Assert.AreEqual(expectedValue, actualValue, "The sum of the invoices is incorrect."); //The message "The sum of the ivoices is incorrect will be show in case the value found is incorrect"
 
-        // BringinG the 'I634' invoices value and verify the value of this invoice'
-        decimal expectedAmount = 423.99m;
-        decimal actualAmount = GetInvoiceAmount("I634");
-        Assert.AreEqual(expectedAmount, actualAmount, "The value of the invoice 'i634' is incorrect.");//The message "The value of the invoice ´i634´ is incorrect will be show in case the value found is incorrect"
+        // Bringing the 'I634' invoices value and verify the value of this invoice'
+        decimal expectedAmountValue = 423.99m;
+        decimal actualAmountValue = GetAmountSpecificInvoice("I634");
+        Assert.AreEqual(expectedAmountValue, actualAmountValue, "The value of the invoice 'i634' is incorrect.");//The message "The value of the invoice ´i634´ is incorrect will be show in case the value found is incorrect"
+
+    }
+    public void TestNavigationToPrivacyAndHomePages()
+    {
+        // Navigating to Privacy page and waiting until Tittle is showed
+        NavigateToPageAndCheckTheTittle("Privacy", "Privacy Policy");
+        // Navigating to Home page and waiting until Tittle is showed
+        NavigateToPageAndCheckTheTittle("Home", "Welcome");
 
     }
 
-    private decimal ParseAmount(string amountText)
+    private decimal ParseAmount(string amountValueText)
     {
         //Removing EUR and converting to the decimal
-        return decimal.Parse(amountText.Replace(" EUR", ""));
+        return decimal.Parse(amountValueText.Replace(" EUR", ""));
     }
 }
 
