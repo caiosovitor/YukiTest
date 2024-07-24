@@ -1,2 +1,1 @@
-yuki_qa_automation_tests.Tests.NavigateToPage
-yuki_qa_automation_tests.Tests.TestNavigationAndInvoiceSummary
+yuki_qa_automation_tests.Tests.NavigateToPageAndCheckTheTittle
